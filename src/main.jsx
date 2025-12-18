@@ -6,8 +6,8 @@ import {
   Navigate,
 } from "react-router-dom";
 import App from "./app.jsx";
-import Signup from "./components/Signup.jsx";
-import Login from "./components/Login.jsx"; // Vamos criar abaixo
+import Signup from "./components/signup.jsx";
+import Login from "./components/login.jsx"; // Vamos criar abaixo
 import "./index.css";
 import Dashboard from "./pages/Dashboard.jsx";
 
