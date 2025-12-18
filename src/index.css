@@ -1,0 +1,20 @@
+/* 1. Importa o motor do Tailwind v4 */
+@import "tailwindcss";
+
+/* 2. O bloco @theme substitui o antigo tailwind.config.js */
+@theme {
+  /* Aqui você define suas cores personalizadas */
+  --color-primaria: #1e40af;
+  --color-destaque: #f59e0b;
+
+  /* Aqui você define fontes, se quiser */
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+
+  /* Você pode criar espaçamentos ou raios de borda customizados */
+  --radius-botao: 0.75rem;
+}
+
+/* 3. Abaixo do @theme, você pode colocar seu CSS global normal */
+body {
+  @apply bg-zinc-950 text-white antialiased;
+}
