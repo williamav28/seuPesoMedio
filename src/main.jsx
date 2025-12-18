@@ -5,7 +5,7 @@ import {
   RouterProvider,
   Navigate,
 } from "react-router-dom";
-import App from "./App.jsx";
+import App from "./app.jsx";
 import Signup from "./components/Signup.jsx";
 import Login from "./components/Login.jsx"; // Vamos criar abaixo
 import "./index.css";
