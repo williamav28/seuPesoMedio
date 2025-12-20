@@ -5,23 +5,29 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"; // 1. Importar o hook
 
 function Signup() {
+  // aqui vão os estados, sempre no começo do componente
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate(); // 2. Inicializar o navigate
   // ... seus estados
 
+  // Função para lidar com o cadastro, precisa ser async porque o createUserWithEmailAndPassword retorna uma Promise e precisamos esperar ela resolver
   const handleSignUp = async (e) => {
     e.preventDefault();
+    // Tentar criar o usuário com email e senha
     try {
+      // Chamar a função do Firebase para criar o usuário com email e senha
       await createUserWithEmailAndPassword(auth, email, password);
       alert("Usuário cadastrado com sucesso!");
-      navigate("/login"); // 3. Redirecionar após o sucesso
+      navigate("/login"); // 3. Redirecionar após o sucesso, redirecionamento feito no arquivo main.jsx
     } catch (error) {
       alert("Erro ao cadastrar usuário: " + error.message);
+      // exibir mensagem de erro caso algo dê errado empre que der erro, o catch captura o erro e podemos mostrar uma mensagem
     }
   };
 
   return (
+    // esse return que será renderizado na tela do usuário pela tag outlet do App.jsx
     <div className="w-full max-w-md bg-black/70 backdrop-blur-xl border border-white/10 p-10 rounded-3xl shadow-2xl">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-black text-white uppercase tracking-tighter">
@@ -56,7 +62,6 @@ function Signup() {
           Cadastrar
         </button>
       </form>
-
       {/* A PARTE QUE TINHA SUMIDO ESTÁ AQUI EMBAIXO: */}
       <div className="mt-8 text-center border-t border-white/5 pt-6">
         <p className="text-zinc-500 text-sm">

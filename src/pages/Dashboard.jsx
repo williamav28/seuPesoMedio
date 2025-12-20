@@ -172,7 +172,7 @@ function Dashboard() {
         />
         <button
           type="submit"
-          className="bg-yellow-500 hover:bg-yellow-400 text-black font-black px-8 rounded-2xl transition-all shadow-lg shadow-yellow-500/20"
+          className="bg-yellow-500 hover:bg-yellow-400 text-black font-black px-4 sm:px-8 rounded-2xl transition-all shadow-lg shadow-yellow-500/20"
         >
           SALVAR
         </button>
@@ -207,7 +207,7 @@ function Dashboard() {
 
                 <button
                   onClick={() => handleDeleteWeight(item.id)}
-                  className="p-2 rounded-lg opacity-0 group-hover:opacity-100 hover:bg-red-500/20 text-zinc-500 hover:text-red-500 transition-all"
+                  className="p-2 rounded-lg opacity-100 sm:opacity-0 sm:group-hover:opacity-100 hover:bg-red-500/20 text-zinc-500 hover:text-red-500 transition-all"
                   title="Excluir registro"
                 >
                   <svg
