@@ -30,4 +30,16 @@ Esta calculadora utiliza o princípio da **Média Móvel de 7 dias**:
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+   git clone [[https://github.com/seu-usuario/seu-repositorio.git](https://github.com/williamav28/seuPesoMedio.git)
+   ```
+2. **Acesse a pasta:**
+   ```bash
+      cd seuPesoMedio
+   ```
+3. Inicie o projeto: Basta abrir o arquivo index.html em qualquer navegador moderno.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT - consulte o arquivo LICENSE para detalhes.
+
+Desenvolvido com 💜 por williamav28
