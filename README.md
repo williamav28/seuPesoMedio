@@ -1,34 +1,87 @@
 # ⚖️ Weight Trend Calculator
 
-Uma aplicação web moderna desenvolvida para ajudar no monitoramento de peso corporal, focando na **tendência real** e na **saúde mental**, mitigando a ansiedade causada pelas flutuações diárias naturais do organismo.
+> **Status do Projeto:** 🟢 Em desenvolvimento ativo
 
+Aplicação web desenvolvida para auxiliar no monitoramento do peso corporal com foco na **tendência real de progresso**, ajudando a reduzir a ansiedade causada por flutuações diárias naturais do organismo.
 
+---
 
-## 🎯 O Problema e a Solução
-O peso corporal pode variar drasticamente em 24 horas devido a retenção de líquidos, glicogênio e inflamação. O foco excessivo nessas flutuações diárias muitas vezes leva à desmotivação. 
+## 🖥️ Preview
 
-Esta calculadora utiliza o princípio da **Média Móvel de 7 dias**:
-- **Estabilidade:** Suaviza picos e quedas irreais.
-- **Tendência:** Mostra se você está realmente em déficit ou superávit calórico ao longo da semana.
-- **Dashboard Limpo:** Foca no que importa: o progresso semanal.
+### Dashboard Principal
+
+![Dashboard Principal](src/dashboardPrincipal.png)
+
+### Histórico de Pesagens
+
+![Histórico de Pesagens](src/historicoPesagens.png)
+
+> _As imagens acima demonstram o cálculo automático da média móvel, histórico de registros e interface responsiva._
+
+---
+
+## 🎯 O Problema
+
+O peso corporal pode variar significativamente em curtos períodos devido a fatores como:
+
+- Retenção de líquidos
+- Estoque de glicogênio
+- Inflamação
+- Horário da pesagem
+
+Essas variações costumam gerar frustração e interpretações erradas do progresso real, afetando diretamente a **motivação e a saúde mental**.
+
+---
+
+## 💡 A Solução
+
+Este projeto utiliza o conceito da **Média Móvel de 7 dias**, oferecendo uma visão mais estável e realista do progresso:
+
+- **Estabilidade:** Suaviza picos e quedas irreais
+- **Clareza:** Evidencia a tendência real (déficit ou superávit calórico)
+- **Foco no essencial:** Acompanhamento baseado em progresso semanal
+
+---
 
 ## ✨ Funcionalidades
-- 🔐 **Autenticação Segura:** Sistema de Cadastro e Login via Firebase Auth.
-- ⚡ **Dados em Tempo Real:** Sincronização instantânea com Firestore (OnSnapshot).
-- 📊 **Cálculo Automático:** Média calculada dinamicamente com base nos últimos 7 registros.
-- 🗑️ **Gestão de Histórico:** Opção para remover registros inseridos incorretamente.
-- 📱 **Interface Responsiva:** Design "Glassmorphism" otimizado para qualquer dispositivo usando Tailwind CSS.
 
-## 🛠️ Tecnologias
-- [React.js](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Firebase](https://firebase.google.com/) (Authentication & Firestore)
-- [React Router Dom](https://reactrouter.com/)
+- 🔐 **Autenticação Segura**
+
+  - Cadastro e Login com **Firebase Authentication**
+
+- ⚡ **Dados em Tempo Real**
+
+  - Sincronização instantânea usando **Firestore (onSnapshot)**
+
+- 📊 **Cálculo Automático**
+
+  - Média móvel baseada nos últimos 7 registros de peso
+
+- 🗑️ **Gestão de Histórico**
+
+  - Exclusão de registros inseridos incorretamente
+
+- 📱 **Interface Responsiva**
+  - Design moderno em **Glassmorphism**
+  - Adaptado para mobile e desktop
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **React.js**
+- **Vite**
+- **Tailwind CSS**
+- **Firebase**
+  - Authentication
+  - Firestore
+- **React Router DOM**
+
+---
 
 ## 🚀 Como rodar o projeto localmente
 
-1. **Clone o repositório:**
+1. **Clone o repositório**
    ```bash
    git clone [[https://github.com/seu-usuario/seu-repositorio.git](https://github.com/williamav28/seuPesoMedio.git)
    ```
@@ -38,8 +91,36 @@ Esta calculadora utiliza o princípio da **Média Móvel de 7 dias**:
    ```
 3. Inicie o projeto: Basta abrir o arquivo index.html em qualquer navegador moderno.
 
+4. **Configure o Firebase**
+
+- Crie um projeto no Firebase
+- Ative Authentication (Email/Senha)
+- Ative o Firestore
+- Crie um arquivo `.env` com suas credenciais
+
+5. **Inicie o projeto**
+
+   ```bash
+   npm run dev
+   ```
+
+6. **Acesse no navegador**
+   ```bash
+   http://localhost:5173
+   ```
+
+## 📚 Aprendizados
+
+Durante este projeto, aprofundei conhecimentos em:
+
+- Arquitetura de aplicações React
+- Gerenciamento de estado e efeitos colaterais
+- Integração com serviços externos (Firebase)
+- Consumo e escuta de dados em tempo real
+- Design focado em UX e saúde mental
+
 ## 📄 Licença
 
 Este projeto está sob a licença MIT - consulte o arquivo LICENSE para detalhes.
 
-Desenvolvido com 💜 por williamav28
+Desenvolvido com 💜 por William Alves
